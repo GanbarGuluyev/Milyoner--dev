@@ -140,8 +140,37 @@ namespace Milyoner_Ödev
                 }
                 else
                     Console.WriteLine("Bu Joker Daha Önce Kullanıldı..");
-                #endregion
-            }   
+
+                goto yanitNoktasi;
+            }
+            else if (secim == 'R')
+            {
+                Console.WriteLine(kasa + " TL Kazanacaksınız.");
+                Console.Write("Çekilmek İstediğinize Emin Misiniz? : ");
+                char cekilCevap = char.Parse(Console.ReadLine());
+
+                if (cekilCevap == 'E')
+                {
+                    Console.WriteLine("Tebrikler, " + kasa + " TL Kazandınız.");
+                    Console.WriteLine("Oyun Bitti");
+                    //return;
+                    Environment.Exit(0);
+                }
+                goto soruNoktasi;
+            }
+            else if (secim != cevap)
+            {
+                Console.WriteLine("Elendiniz, Kazandığınız Tutar: " + baraj + " TL");
+                Console.WriteLine("Oyun Bitti");
+                //return;
+                Environment.Exit(0);
+            }
+
+            kasa = odul;
+            Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
+            Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
+            Console.ReadLine();
+            #endregion
         }
     }
 }
