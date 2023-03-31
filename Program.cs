@@ -20,8 +20,8 @@ namespace Milyoner_Ödev
             string telefonJoker2 = Console.ReadLine();
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
-            Console.WriteLine();
-            Console.WriteLine("Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
+            Console.Clear();
+            Console.WriteLine("Telefon Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
             Console.ReadLine();
 
             Console.Clear();
@@ -171,7 +171,7 @@ namespace Milyoner_Ödev
             Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
             Console.ReadLine();
             #endregion
-            #endregion
+#endregion
         }
     }
 }
