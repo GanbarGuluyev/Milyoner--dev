@@ -12,9 +12,7 @@ namespace Milyoner_Ödev
             Console.WriteLine("Soyadınızı Girin: ");
             string soyad = Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
-            Console.ReadLine();
-            Console.Clear();
+
 
 
             Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
@@ -23,10 +21,15 @@ namespace Milyoner_Ödev
             string telefonJoker2 = Console.ReadLine();
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
-            Console.WriteLine("Jokerleriniz: " + "1" + telefonJoker1 + "2" + telefonJoker2 + "3" + telefonJoker3);
+            Console.WriteLine();
+            Console.WriteLine("Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
             Console.ReadLine();
 
+
             Console.Clear();
+            Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
+            Console.WriteLine();
+
 
             Console.Write("Kuralları Biliyor Musunuz? : ");
             char kuralCevap = char.Parse(Console.ReadLine().ToUpper());
@@ -75,7 +78,7 @@ namespace Milyoner_Ödev
             gizleC = false; gizleD = false;
         #endregion
 
-        #region Soru Kalıbı
+            #region Soru Kalıbı
         soruNoktasi:
             Console.Clear();
             Console.WriteLine(soruNo + "-)" + soru);
