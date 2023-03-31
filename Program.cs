@@ -1,4 +1,6 @@
-﻿namespace Milyoner_Ödev
+﻿using System.Transactions;
+
+namespace Milyoner_Ödev
 {
     internal class Program
     {
@@ -6,9 +8,11 @@
         {
             Console.WriteLine("Kim Milyoner Olmak İstemez Ki: \n");
             Console.WriteLine("Adınızı Giriniz: ");
-            Console.ReadLine();
+            string ad = Console.ReadLine();
             Console.WriteLine("Soyadınızı Girin: ");
-            Console.ReadLine();
+            string soyad = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
         }
     }
 }
