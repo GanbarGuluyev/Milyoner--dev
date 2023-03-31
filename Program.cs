@@ -13,6 +13,8 @@ namespace Milyoner_Ödev
             string soyad = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
+            Console.ReadLine();
+            Console.Clear();
 
 
             Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
@@ -21,7 +23,37 @@ namespace Milyoner_Ödev
             string telefonJoker2 = Console.ReadLine();
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
+            Console.WriteLine("Jokerleriniz: " + "1" + telefonJoker1 + "2" + telefonJoker2 + "3" + telefonJoker3);
+            Console.ReadLine();
 
+            Console.Clear();
+
+            Console.Write("Kuralları Biliyor Musunuz? : ");
+            char kuralCevap = char.Parse(Console.ReadLine().ToUpper());
+
+            if (kuralCevap != 'E')
+            {
+                // TODO: Kurallar eklenecek.
+                Console.WriteLine("Kurallar: asdfasdaads");
+            }
+
+            Console.Write("Hazır Mısınız? : ");
+            char hazirCevap = char.Parse(Console.ReadLine().ToUpper());
+
+            if (hazirCevap != 'E')
+            {
+                Console.WriteLine("Hazır olmananız bekleniyor.");
+                Console.WriteLine("Hazır olduğunuzda Enter'a Basın");
+                Console.ReadLine();
+            }
+            bool seyirciHak = true, yuzdeHak = true, telefonHak = true;
+            int kasa = 0;
+
+            int soruNo = 1, odul, baraj;
+            int seyirciYuzdeA, seyirciYuzdeB, seyirciYuzdeC, seyirciYuzdeD;
+            bool gizleA, gizleB, gizleC, gizleD;
+            string soru, a, b, c, d;
+            char cevap;
 
         }
     }
