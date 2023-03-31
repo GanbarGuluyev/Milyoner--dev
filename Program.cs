@@ -6,14 +6,13 @@ namespace Milyoner_Ödev
     {
         static void Main(string[] args)
         {
+            #region Kim Milyoner Olmak İstemez Ki
             Console.WriteLine("Kim Milyoner Olmak İstemez Ki: \n");
-            Console.WriteLine("Adınızı Giriniz: ");
+            Console.Write("Adınızı Giriniz: ");
             string ad = Console.ReadLine();
-            Console.WriteLine("Soyadınızı Girin: ");
+            Console.Write("Soyadınızı Girin: ");
             string soyad = Console.ReadLine();
             Console.WriteLine();
-
-
 
             Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
             string telefonJoker1 = Console.ReadLine();
@@ -25,11 +24,9 @@ namespace Milyoner_Ödev
             Console.WriteLine("Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
             Console.ReadLine();
 
-
             Console.Clear();
             Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
             Console.WriteLine();
-
 
             Console.Write("Kuralları Biliyor Musunuz? : ");
             char kuralCevap = char.Parse(Console.ReadLine().ToUpper());
@@ -173,6 +170,7 @@ namespace Milyoner_Ödev
             Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
             Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
             Console.ReadLine();
+            #endregion
             #endregion
         }
     }
