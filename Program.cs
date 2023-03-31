@@ -73,7 +73,17 @@ namespace Milyoner_Ödev
             // TODO: Daha iyi olabirlir mi? Her seferinde bunu tekrarlamaya gerek yok gibi.
             gizleA = false; gizleB = false;
             gizleC = false; gizleD = false;
-            #endregion
+        #endregion
+
+        #region Soru Kalıbı
+        soruNoktasi:
+            Console.Clear();
+            Console.WriteLine(soruNo + "-)" + soru);
+            Console.WriteLine("A) " + (!gizleA ? a : ""));
+            Console.WriteLine("B) " + (!gizleB ? b : ""));
+            Console.WriteLine("C) " + (!gizleC ? c : ""));
+            Console.WriteLine("D) " + (!gizleD ? d : ""));
+        #endregion
         }
     }
 }
