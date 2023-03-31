@@ -6,7 +6,7 @@ namespace Milyoner_Ödev
     {
         static void Main(string[] args)
         {
-            #region Kim Milyoner Olmak İstemez Ki
+        #region Kim Milyoner Olmak İstemez Ki
             Console.WriteLine("Kim Milyoner Olmak İstemez Ki: \n");
             Console.Write("Adınızı Giriniz: ");
             string ad = Console.ReadLine();
@@ -21,10 +21,11 @@ namespace Milyoner_Ödev
             Console.Write("3.Telefon Jokerinizi Giriniz: ");
             string telefonJoker3 = Console.ReadLine();
             Console.Clear();
+
             Console.WriteLine("Telefon Jokerleriniz: " + "1:" + telefonJoker1 + ", " + "2:" + telefonJoker2 + ", " + "3:" + telefonJoker3);
             Console.ReadLine();
-
             Console.Clear();
+
             Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
             Console.WriteLine();
 
@@ -55,7 +56,7 @@ namespace Milyoner_Ödev
             string soru, a, b, c, d;
             char cevap;
 
-            #region Soru Bilgileri
+        #region Soru Bilgileri
             soruNo = 1;
             soru = "Türkiyenin Başkenti Neresidir?";
             a = "Ankara";
@@ -75,7 +76,8 @@ namespace Milyoner_Ödev
             gizleC = false; gizleD = false;
         #endregion
 
-            #region Soru Kalıbı
+        #region Soru Kalıbı
+
         soruNoktasi:
             Console.Clear();
             Console.WriteLine(soruNo + "-)" + soru);
@@ -170,8 +172,9 @@ namespace Milyoner_Ödev
             Console.WriteLine("Tebrikler, Kazandığınız Tutar: " + kasa + " TL");
             Console.WriteLine("\nSonraki Soruya Geçmek  İçin Enter'a Basın..");
             Console.ReadLine();
-            #endregion
-#endregion
+        #endregion
+        
+        #endregion
         }
     }
 }
