@@ -13,6 +13,16 @@ namespace Milyoner_Ödev
             string soyad = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Hoş Geldiniz: " + ad + " " + soyad);
+
+
+            Console.Write("\n1.Telefon Jokerinizi Giriniz: ");
+            string telefonJoker1 = Console.ReadLine();
+            Console.Write("2.Telefon Jokerinizi Giriniz: ");
+            string telefonJoker2 = Console.ReadLine();
+            Console.Write("3.Telefon Jokerinizi Giriniz: ");
+            string telefonJoker3 = Console.ReadLine();
+
+
         }
     }
 }
